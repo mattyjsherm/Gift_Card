@@ -19,12 +19,12 @@
   body{
     font-family:'Hanken Grotesk',sans-serif;
     background:radial-gradient(120% 80% at 50% -10%, var(--navy2) 0%, var(--navy) 45%, var(--ink) 100%);
-    color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;
+    color:var(--text);min-height:100vh;min-height:100dvh;display:flex;
     padding:24px 16px;overflow-x:hidden;
   }
   body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.5;
     background-image:radial-gradient(circle at 1px 1px, rgba(255,255,255,.04) 1px, transparent 0);background-size:4px 4px;}
-  .card{position:relative;width:100%;max-width:430px;background:var(--paper);border-radius:22px;overflow:hidden;
+  .card{position:relative;width:100%;max-width:430px;margin:auto;background:var(--paper);border-radius:22px;overflow:hidden;
     box-shadow:0 40px 90px -30px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.04);
     animation:rise .8s cubic-bezier(.2,.8,.25,1) both;}
   @keyframes rise{from{opacity:0;transform:translateY(24px) scale(.98);}to{opacity:1;transform:none;}}
@@ -107,7 +107,7 @@
    recipient's chosen inbox and can buy + send the right e-gift card straight away.
    Flip EMAIL_ON_OPEN to true if you also want a ping when the page is opened.
 ============================================================================ */
-const ALERT_ENDPOINT = "https://formspree.io/f/mlgvykqg";
+const ALERT_ENDPOINT = "https://formspree.io/f/mdavgnll";
 const EMAIL_ON_OPEN  = false;
 
 /* ---- recipient ---- */
